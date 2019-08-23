@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="maritalstatus_ Married-civ-spouse <= 0.5\ngini = 0.3778\nsamples = 1792\nvalue = [1339, 453]"] ;
+1 [label="capital-gain <= 4718.5\ngini = 0.1201\nsamples = 951\nvalue = [890, 61]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="education-num <= 12.5\ngini = 0.0845\nsamples = 928\nvalue = [887, 41]"] ;
+1 -> 2 ;
+3 [label="gini = 0.0363\nsamples = 757\nvalue = [743, 14]"] ;
+2 -> 3 ;
+50 [label="age <= 34.5\ngini = 0.2659\nsamples = 171\nvalue = [144, 27]"] ;
+2 -> 50 ;
+51 [label="gini = 0.0681\nsamples = 85\nvalue = [82, 3]"] ;
+50 -> 51 ;
+66 [label="occupation_ Exec-managerial <= 0.5\ngini = 0.4024\nsamples = 86\nvalue = [62, 24]"] ;
+50 -> 66 ;
+67 [label="gini = 0.32\nsamples = 65\nvalue = [52, 13]"] ;
+66 -> 67 ;
+108 [label="gini = 0.4989\nsamples = 21\nvalue = [10, 11]"] ;
+66 -> 108 ;
+123 [label="gini = 0.2268\nsamples = 23\nvalue = [3, 20]"] ;
+1 -> 123 ;
+130 [label="capital-gain <= 5095.5\ngini = 0.4977\nsamples = 841\nvalue = [449, 392]"] ;
+0 -> 130 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+131 [label="education-num <= 11.5\ngini = 0.4855\nsamples = 764\nvalue = [447, 317]"] ;
+130 -> 131 ;
+132 [label="gini = 0.4329\nsamples = 527\nvalue = [360, 167]"] ;
+131 -> 132 ;
+465 [label="gini = 0.4647\nsamples = 237\nvalue = [87, 150]"] ;
+131 -> 465 ;
+610 [label="gini = 0.0506\nsamples = 77\nvalue = [2, 75]"] ;
+130 -> 610 ;
+}
